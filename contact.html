@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content ="with=device-width, initial-scale = 1.0">
+    <title>Forigen University</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="style.css">  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="eduford_img/logo.png" ></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()" ></i>
+                <ul>
+                    <li>  <a href="index.html">HOME</a></li>
+                    <li>  <a href="about.html">ABOUT</a></li>
+                     <li>  <a href="course.html">COURSE</a></li>
+                     <li> <a href="blogPage.html">BLOG</a></li>
+                    <li>  <a href="contact.html">CONTACT</a></li>
+                    </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+
+       <h1> Contacts Us </h1>
+
+    </section>
+         <!-- --------- contact us --------- -->
+
+         <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14220.224392053526!2d83.46324214999999!3d26.996775149999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399152e03ec584f9%3A0x2a3d0d2248d4bb20!2sPaniyara%2C%20Uttar%20Pradesh%20273310!5e0!3m2!1sen!2sin!4v1653113788669!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </section>
+
+         <section class="contact-us">
+             <div class="row">
+                 <div class="contact-col">
+                     <div>
+                        <i class="fa-solid fa-house-user"></i>
+                    <span>
+                        <h5>xyz Road, ABC Building </h5>
+                        <p>Paniyara Maharajgan, IN</p>
+                    </span>
+                 </div>
+                 <div>
+                 
+                    <i class="fa-solid fa-phone"></i>>
+                    <span>
+                        <h5>+91 225465542 </h5>
+                        <p>Monday To Saturday, 10AM - 8PM</p>
+                    </span>
+                 </div>
+                <div>
+                 
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        <h5>pasto@ghtis.com </h5>
+                        <p>Email Us Your Qurey</p>
+                    </span>
+                 </div>
+                </div>
+                 <div class="contact-col">
+                     <form action="formHndler.php" method="post">
+                     <input type="text" name="name" placeholder="Enter Your Name" required>
+                     <input type="email" name="email" placeholder="Enter Email Address" required>
+
+                     <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                     <textarea  rows="8"  name="massage" placeholder="Massage" required></textarea>
+                     <button type="submit" class="hero-btn red-btn">Send Massage To Us</button>
+                    </form>
+                 </div>
+                 
+             </div>
+         </section>
+    
+     <!-- --------- footer ------- -->
+
+     
+
+
+            <section class="footer">
+                <h4>About US</h4>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                     Reprehenderit dolore, totam nobis itaque at eos odio! Officia,<br>
+                      voluptas dicta? Nulla totam perspiciatis blanditiis reiciendis cupiditate veniam,
+                       fugit inventore atque suscipit.</P>
+
+                       <div class="icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram-square"></i>
+                        <i class="fa-brands fa-twitter-square"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                       </div>
+                       <p>Made With  <i class="fa-solid fa-heart"></i></i> by Irfan Ansari</p>
+            </section>
+
+
+
+            <!-- ------JS for menu toggle------ -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
